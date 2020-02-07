@@ -50,9 +50,11 @@ public class LoadImagesTask extends AsyncTask<ArrayList<String>, Void, ArrayList
         return output;
     }
 
+
     @Override
     protected void onPostExecute(ArrayList<String> strings) {
         super.onPostExecute(strings);
+        /*Don't do that*/
         MainActivity.bindImages(strings);
     }
 }
